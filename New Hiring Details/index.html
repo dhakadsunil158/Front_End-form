@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact us form validation Using Javascript</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <h2>New Hiring Details</h2>
+  <div id="error_message"></div>
+  <form id="myform" onsubmit="return validate();">
+    <div class="input_field">
+        Name: <input type="text"  id="name">
+    </div>
+    <div class="input_field">
+        Employee ID: <input type="text"  id="Employee">
+    </div>
+    <div class="input_field">
+        Department: <select type="text" name="Department">
+        <option selected="" value="">Select Department</option> 
+                <option>Deep Learning</option> 
+                <option>Bot Developer</option> 
+                <option>Front End</option> 
+                <option>Back End</option> 
+                <option>Business Devloper</option> 
+            </select>
+    </div>
+    <div class="input_field">
+        Email Id<input type="text"  id="email">
+    </div>
+    <div class="input_field">
+        Date of Joining:<input type="date" id="Date" >
+    </div>
+     <div class="btn" >
+        <input type="reset" value="Clear">
+    </div>
+    <div class="btn">
+        <input type="submit">
+    </div>
+    
+        
+    
+  </form>
+</div>
+
+</body>
+</html>
